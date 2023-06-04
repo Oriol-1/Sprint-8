@@ -1,27 +1,179 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary: orange;
+  --black: #000;
+  --white: #FFF;
+  --fuente-principal: 'Outfit', sans-serif;
+}
+/* .textDecorationNone {
+  text-decoration: none;
+} */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: 2rem;
+  font-family: var(--fuente-principal);
+  line-height: 1.5;
+  background-image: url(../../public/fondo.jpg);
+  background-position: center;
+  color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+
+  text-decoration: none;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 4rem;
+}
+
+
+.pilot-name {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.load-more-button {
+  padding: 1em 2.2em;
+  background-color: var(--black);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--white);
+  border: none;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+  animation: opacity 10s;
+}
+
+.load-more-button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  /* border: 1px solid var(--black); */
+}
+
+.logo {
+  width: 12%;
+  height: 12%;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e1d1d;
+  background-image: linear-gradient(to bottom, rgba(34, 32, 32, 0.8), rgba(14, 12, 12, 0.4));
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ListGroup.Item */
+.list-group-item {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: #1e1d1d;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  color: #fff;
+ 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+.model-info {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.model-info strong {
+  color: var(--white);
+}
+
+.model-info span {
+  color: #ccc;
+}
+
+.model-info a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.model-info a:hover {
+  text-decoration: underline;
+}
+
+.boton{
+  background-color: var(--primary);
+  color: var(--black);
+  border: none;
+  border-radius: 5px;
+  padding: 7%;
+  margin: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  animation: opacity 10s;
+  transition: all .5s;
+  
+}
+
+.boton:hover{
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--primary);
+
+}
+
+
+/* Starships */
+
+.movie-title {
+  font-weight: bold;
+  color:#000;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+
+}
+.movie-text {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+
+.img-peli{
+width: 100%;
+margin: 0 auto;
+
+
+
 }
