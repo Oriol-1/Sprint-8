@@ -1,3 +1,28 @@
+<!-- 
+Ejecuta el siguiente comando para instalar las dependencias del proyecto
+
+npm install
+
+Una vez que las dependencias se hayan instalado correctamente, puedes ejecutar el proyecto utilizando el siguiente comando:
+
+npm run dev
+
+Este comando iniciará el servidor de desarrollo de Next.js y tu proyecto estará disponible en un navegador web en la dirección http://localhost:3000. -->
+
+# Proyecto de prueba para el curso de Next.js
+Este proyecto es un proyecto de prueba para el curso de Next.js
+## Instalación
+Ejecuta el siguiente comando para instalar las dependencias del proyecto:
+
+npm install
+## Ejecución
+Una vez que las dependencias se hayan instalado correctamente, puedes ejecutar el proyecto utilizando el siguiente comando:
+npm run dev
+
+Este comando iniciará el servidor de desarrollo de Next.js y tu proyecto estará disponible en un navegador web en la dirección http://localhost:3000.
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
